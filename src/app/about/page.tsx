@@ -134,9 +134,44 @@ export default function About() {
         </div>
       </div>
 
-      <div className="mb-8 w-full rounded-lg border p-4">
-        <h2 className="text-2xl font-semibold">Quem sou eu?</h2>
-      </div>
+      <section className="mb-8 w-full rounded-lg border p-4">
+        <h2 className="mb-8 text-2xl font-semibold">Minha história</h2>
+
+        <div className="ml-4 space-y-4 leading-relaxed">
+          <p>
+            Apaixonado por tecnologia e com formação inicial em Técnico em
+            mecânica, em 2014 resolvi de mudar de área e iniciei uma transição
+            de carreira. Iniciei o curso de Ciência da computação pela
+            Universidade de Franca (Unifran), conciliando estudo e trabalho
+            ainda como Técnico em mecânica.
+          </p>
+
+          <p>
+            Em meados de 2016 migrei de vez para a area de tecnologia inciando
+            estágio de desenvolvimento web.
+          </p>
+
+          <p>
+            Em 2017 fui efetivado e permanecendo até 2018, atuando como
+            desenvolvedor frontend, construindo e mantendo interfaces em um
+            sistema ERP.
+          </p>
+
+          <p>
+            Em 2018 tive a oportunidade de conhecer o dinâmico e empolgante
+            mundo das startups. Com foco no público AGRO, atuei por mais de 5
+            anos em diversos projetos, cada um oferecendo desafios e
+            oportunidades de crescimento únicos.
+          </p>
+
+          <p>
+            Hoje possuo uma experiência diversificada em desenvolvimento WEB e
+            cada vez mais, empolgado pelas novas ferramentas que surgem a cada
+            dia e fascinado por todos os aspectos do design de interfaces e da
+            experiência do usuário.
+          </p>
+        </div>
+      </section>
 
       <div className="mb-8 w-full rounded-lg border p-4">
         <h2 className="text-2xl font-semibold">Experiência</h2>

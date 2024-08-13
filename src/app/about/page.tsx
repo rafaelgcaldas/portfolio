@@ -173,9 +173,61 @@ export default function About() {
         </div>
       </section>
 
-      <div className="mb-8 w-full rounded-lg border p-4">
-        <h2 className="text-2xl font-semibold">Experiência</h2>
-      </div>
+      <section className="mb-8 w-full rounded-lg border p-4">
+        <h2 className="mb-8 text-2xl font-semibold">Experiência</h2>
+        <div className="group relative mb-8 grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+          <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+            01/2018 - 08/2024
+          </header>
+          <div className="sm:col-span-6">
+            <h3 className="mb-4 font-semibold leading-snug text-foreground">
+              Desenvolvedor Frontend (Pleno) - IZagro (Franca - SP)
+            </h3>
+            <p className="text-md leading-normal text-muted-foreground">
+              Construindo e mantendo sites, painéis administrativos, dashboards,
+              protótipos e components. Em colaboração com equipes
+              multifuncionais, como desenvolvedores, engenheiros agrônomos,
+              técnicos, designers e marketing desenvovendo ferramentas para
+              gerenciamento de produtos e promovendo acessibildade ao público
+              agro como, produtores e revendas.
+            </p>
+          </div>
+        </div>
+
+        <div className="group relative mb-8 grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+          <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+            05/2017 - 05/2018
+          </header>
+          <div className="sm:col-span-6">
+            <h3 className="mb-4 font-semibold leading-snug text-foreground">
+              Desenvolvedor Frontend (Júnior) - SMN (Franca - SP)
+            </h3>
+            <p className="text-md leading-normal text-muted-foreground">
+              Construindo e mantendo e estilizando interfaces para um sistema
+              ERP em colaboração com a equipe de backend e analistas de negócio.
+            </p>
+          </div>
+        </div>
+
+        <div className="group relative mb-8 grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+          <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+            06/2016 - 05/2017
+          </header>
+          <div className="sm:col-span-6">
+            <h3 className="mb-4 font-semibold leading-snug text-foreground">
+              Desenvolvedor Frontend (Estagiário) - SMN (Franca - SP)
+            </h3>
+            <p className="text-md leading-normal text-muted-foreground">
+              Criando e estilizando páginas web utilizando HTML e CSS e
+              adicionando interatividade às páginas web com JavaScript.
+              Introdução à frameworks e bibliotecas modernas como React e
+              Angular para desenvolver componentes de interface de usuário
+              dinâmicos. Realizando atividades e desfios propostos pelo
+              supervisor do estágio.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <div className="mb-8 w-full rounded-lg border p-4">
         <h2 className="text-2xl font-semibold">Formação</h2>

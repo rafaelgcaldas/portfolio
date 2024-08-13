@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import angularIcon from '@/assets/angular.svg'
 import bootstrapIcon from '@/assets/bootstrap.svg'
+import chakraUiIcon from '@/assets/chakra-ui.svg'
 import figmaIcon from '@/assets/figma-icon.svg'
 import githubIcon from '@/assets/github-icon.svg'
 import htmlIcon from '@/assets/html.svg'
@@ -9,8 +10,13 @@ import crmImage from '@/assets/images/banner-2.webp'
 import linkedinIcon from '@/assets/linkedin-icon-1.svg'
 import nextJsIcon from '@/assets/next-js.svg'
 import nodeIcon from '@/assets/nodejs-icon.svg'
+import pwaIcon from '@/assets/pwa.svg'
+import radixUiIcon from '@/assets/radix-ui.svg'
 import reactIcon from '@/assets/react.svg'
+import sassIcon from '@/assets/sas.svg'
+import springIcon from '@/assets/spring.svg'
 import tailwindCssIcon from '@/assets/tailwindcss.svg'
+import typeScriptIcon from '@/assets/typescript.svg'
 import { ArrowDown } from 'lucide-react'
 
 import marketplaceImage from '@/assets/images/banner-3.webp'
@@ -137,7 +143,7 @@ export default function Home() {
                   <div className="absolute flex h-16 w-16 origin-[144px_144px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-[17.5s]">
                     <div className="animate-orbit-x animate-delay-[17.5s]">
                       <Image
-                        src={htmlIcon}
+                        src={typeScriptIcon}
                         className="size-10 animate-fade-in opacity-0 animate-delay-[17.5s]"
                         alt="react"
                       />
@@ -167,8 +173,23 @@ export default function Home() {
                 est venenatis augue, ac hendrerit libero justo ornare dui.
               </p>
             </div>
-            <div className="flex">
-              <div className="size-12 bg-slate-300"></div>
+            <div className="flex gap-4">
+              <div className="flex items-center gap-4">
+                <Image src={angularIcon} alt="Angular" className="size-10" />
+                <Image src={htmlIcon} alt="Html" className="size-9" />
+                <Image src={sassIcon} alt="Sass" className="size-10" />
+                <Image
+                  src={typeScriptIcon}
+                  alt="TypeScript"
+                  className="size-10"
+                />
+                <Image
+                  src={bootstrapIcon}
+                  alt="Bootstrap"
+                  className="size-12"
+                />
+                <Image src={springIcon} alt="Spring boot" className="size-10" />
+              </div>
             </div>
           </div>
           <div className="relative z-10 col-start-1 col-end-8 row-start-1 -row-end-1">
@@ -184,10 +205,28 @@ export default function Home() {
           <div className="col-start-1 col-end-7 row-start-1 -row-end-1 flex flex-col space-y-6">
             <h2 className="text-2xl font-bold">Marketplace IZagro</h2>
             <div className="relative z-20 h-40 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
-              <p className="text-foreground">teste</p>
+              <p className="font-light text-foreground">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                viverra urna eget sapien blandit, non sollicitudin augue congue.
+                Donec condimentum augue viverra, feugiat arcu quis, elementum
+                turpis. Vivamus varius, magna quis facilisis convallis, velit
+                est venenatis augue, ac hendrerit libero justo ornare dui.
+              </p>
             </div>
-            <div className="flex">
-              <div className="size-12 bg-slate-300"></div>
+            <div className="flex gap-4">
+              <Image className="size-10" src={reactIcon} alt="React" />
+              <Image
+                className="size-10 dark:invert"
+                src={nextJsIcon}
+                alt="NextJS"
+              />
+              <Image className="size-10" src={chakraUiIcon} alt="Chakra UI" />
+              <Image
+                className="size-10"
+                src={typeScriptIcon}
+                alt="TypeScript"
+              />
+              <Image className="size-10" src={springIcon} alt="Spring boot" />
             </div>
           </div>
           <div className="relative z-10 col-start-6 -col-end-1 row-start-1 -row-end-1">
@@ -203,10 +242,26 @@ export default function Home() {
           <div className="col-start-7 -col-end-1 row-start-1 -row-end-1 flex flex-col items-end space-y-6">
             <h2 className="text-2xl font-bold">IZagro Survey</h2>
             <div className="relative z-20 h-40 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
-              <p className="text-foreground">teste</p>
+              <p className="font-light text-foreground">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                viverra urna eget sapien blandit, non sollicitudin augue congue.
+                Donec condimentum augue viverra, feugiat arcu quis, elementum
+                turpis. Vivamus varius, magna quis facilisis convallis, velit
+                est venenatis augue, ac hendrerit libero justo ornare dui.
+              </p>
             </div>
-            <div className="flex">
-              <div className="size-12 bg-slate-300"></div>
+            <div className="flex items-center gap-4">
+              <Image src={angularIcon} alt="Angular" className="size-10" />
+              <Image src={htmlIcon} alt="Html" className="size-9" />
+              <Image src={sassIcon} alt="Sass" className="size-10" />
+              <Image
+                src={typeScriptIcon}
+                alt="TypeScript"
+                className="size-10"
+              />
+              <Image src={bootstrapIcon} alt="Bootstrap" className="size-12" />
+              <Image src={pwaIcon} alt="PWA" className="size-16" />
+              <Image src={springIcon} alt="Spring boot" className="size-10" />
             </div>
           </div>
           <div className="relative z-10 col-start-1 col-end-8 row-start-1 -row-end-1">
@@ -222,10 +277,37 @@ export default function Home() {
           <div className="col-start-1 col-end-7 row-start-1 -row-end-1 flex flex-col space-y-6">
             <h2 className="text-2xl font-bold">Portal de fidelidade</h2>
             <div className="relative z-20 h-40 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
-              <p className="text-foreground">teste</p>
+              <p className="font-light text-foreground">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                viverra urna eget sapien blandit, non sollicitudin augue congue.
+                Donec condimentum augue viverra, feugiat arcu quis, elementum
+                turpis. Vivamus varius, magna quis facilisis convallis, velit
+                est venenatis augue, ac hendrerit libero justo ornare dui.
+              </p>
             </div>
-            <div className="flex">
-              <div className="size-12 bg-slate-300"></div>
+            <div className="flex gap-4">
+              <Image className="size-10" src={reactIcon} alt="React" />
+              <Image
+                className="size-10 dark:invert"
+                src={nextJsIcon}
+                alt="NextJS"
+              />
+              <Image
+                className="size-10"
+                src={tailwindCssIcon}
+                alt="TailwindCss"
+              />
+              <Image
+                className="size-10 dark:invert"
+                src={radixUiIcon}
+                alt="Radix UI"
+              />
+              <Image
+                className="size-10"
+                src={typeScriptIcon}
+                alt="TypeScript"
+              />
+              <Image className="size-10" src={springIcon} alt="Spring boot" />
             </div>
           </div>
           <div className="relative z-10 col-start-6 -col-end-1 row-start-1 -row-end-1">

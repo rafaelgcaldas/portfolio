@@ -11,14 +11,17 @@ import cssIcon from '@/assets/css.svg'
 import figmaIcon from '@/assets/figma-icon.svg'
 import htmlIcon from '@/assets/html.svg'
 import javaScriptIcon from '@/assets/javascript.svg'
+import microsoftIcon from '@/assets/microsoft.svg'
 import nextJsIcon from '@/assets/next-js.svg'
 import nodeIcon from '@/assets/nodejs-icon.svg'
 import pwaIcon from '@/assets/pwa.svg'
 import radixUiIcon from '@/assets/radix-ui.svg'
 import reactIcon from '@/assets/react.svg'
+import rocketseatIcon from '@/assets/rocketseat.svg'
 import sassIcon from '@/assets/sas.svg'
 import tailwindCssIcon from '@/assets/tailwindcss.svg'
 import typeScriptIcon from '@/assets/typescript.svg'
+import { Separator } from '@/components/ui/separator'
 
 export default function About() {
   return (
@@ -175,15 +178,15 @@ export default function About() {
 
       <section className="mb-8 w-full rounded-lg border p-4">
         <h2 className="mb-8 text-2xl font-semibold">Experiência</h2>
-        <div className="group relative mb-8 grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-          <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+        <div className="relative mb-10 grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+          <header className="z-10 mb-2 mt-1 text-base font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
             01/2018 - 08/2024
           </header>
           <div className="sm:col-span-6">
             <h3 className="mb-4 font-semibold leading-snug text-foreground">
               Desenvolvedor Frontend (Pleno) - IZagro (Franca - SP)
             </h3>
-            <p className="text-md leading-normal text-muted-foreground">
+            <p className="mb-4 items-center leading-normal text-muted-foreground">
               Construindo e mantendo sites, painéis administrativos, dashboards,
               protótipos e components. Em colaboração com equipes
               multifuncionais, como desenvolvedores, engenheiros agrônomos,
@@ -191,50 +194,234 @@ export default function About() {
               gerenciamento de produtos e promovendo acessibildade ao público
               agro como, produtores e revendas.
             </p>
+            <div className="flex flex-wrap gap-4">
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                Angular
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                React
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                TailwindCss
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                Bootstrap
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                TypeScript
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                NextJS
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                Saas
+              </span>
+            </div>
           </div>
         </div>
 
-        <div className="group relative mb-8 grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-          <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+        <div className="relative mb-10 grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+          <header className="z-10 mb-2 mt-1 text-base font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
             05/2017 - 05/2018
           </header>
           <div className="sm:col-span-6">
             <h3 className="mb-4 font-semibold leading-snug text-foreground">
               Desenvolvedor Frontend (Júnior) - SMN (Franca - SP)
             </h3>
-            <p className="text-md leading-normal text-muted-foreground">
+            <p className="mb-4 leading-normal text-muted-foreground">
               Construindo e mantendo e estilizando interfaces para um sistema
               ERP em colaboração com a equipe de backend e analistas de negócio.
             </p>
+            <div className="flex flex-wrap gap-4">
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                HTML
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                CSS
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                Javascript
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                JQuery
+              </span>
+            </div>
           </div>
         </div>
 
-        <div className="group relative mb-8 grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-          <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+        <div className="relative mb-10 grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+          <header className="z-10 mb-2 mt-1 text-base font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
             06/2016 - 05/2017
           </header>
           <div className="sm:col-span-6">
             <h3 className="mb-4 font-semibold leading-snug text-foreground">
               Desenvolvedor Frontend (Estagiário) - SMN (Franca - SP)
             </h3>
-            <p className="text-md leading-normal text-muted-foreground">
+            <p className="mb-4 leading-normal text-muted-foreground">
               Criando e estilizando páginas web utilizando HTML e CSS e
               adicionando interatividade às páginas web com JavaScript.
               Introdução à frameworks e bibliotecas modernas como React e
               Angular para desenvolver componentes de interface de usuário
-              dinâmicos. Realizando atividades e desfios propostos pelo
+              dinâmicos. Realizando atividades e desafios propostos pelo
               supervisor do estágio.
             </p>
+            <div className="flex flex-wrap gap-4">
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                HTML
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                CSS
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                Angular
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                React
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                Bootstrap
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                TypeScript
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                Javascript
+              </span>
+              <Separator orientation="vertical" className="h-5" />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                NodeJS
+              </span>
+            </div>
           </div>
         </div>
       </section>
 
       <div className="mb-8 w-full rounded-lg border p-4">
-        <h2 className="text-2xl font-semibold">Formação</h2>
+        <h2 className="mb-8 text-2xl font-semibold">Formação</h2>
+
+        <div className="space-y-4">
+          <p className="font-semibold leading-snug text-foreground">
+            <span className="text-muted-foreground">Instituição: </span> Unifran
+            - Universidade de Franca
+          </p>
+          <p className="font-semibold leading-snug text-foreground">
+            <span className="text-muted-foreground">Formação: </span> Bacharel
+            em Ciência da Computação
+          </p>
+          <p className="text-muted-foreground">Período: 2014 - 2017</p>
+        </div>
+
+        <Separator className="my-6" />
+
+        <div className="space-y-4">
+          <p className="font-semibold leading-snug text-foreground">
+            <span className="text-muted-foreground">Instituição: </span> Centro
+            Paula Souza
+          </p>
+          <p className="font-semibold leading-snug text-foreground">
+            <span className="text-muted-foreground">Formação: </span> Técnico em
+            Mecânica
+          </p>
+          <p className="text-muted-foreground">Período: 2007 - 2008</p>
+        </div>
       </div>
 
       <div className="mb-8 w-full rounded-lg border p-4">
-        <h2 className="text-2xl font-semibold">Certificados</h2>
+        <h2 className="mb-8 text-2xl font-semibold">Certificados</h2>
+
+        <div className="flex flex-col gap-6">
+          <div className="grid grid-cols-12 gap-4">
+            <div className="col-span-1 flex size-20 flex-1 items-center justify-center rounded-lg border bg-muted p-4">
+              <Image
+                src={rocketseatIcon}
+                alt="Rocketseat"
+                className="size-12 dark:invert"
+              />
+            </div>
+
+            <div className="col-span-11 space-y-2">
+              <h3 className="text-xl font-bold leading-snug text-foreground">
+                Clean Code
+              </h3>
+              <p className="text-lg leading-normal text-foreground">
+                Rocketseat
+              </p>
+              <p className="text-sm leading-normal text-foreground">
+                Princípios e técnicas de código limpo aplicadas ao JavaScript
+                com ReactJS e Node.js
+              </p>
+              <p className="leading-normal text-muted-foreground">
+                Emitido em abril de 2024
+              </p>
+            </div>
+          </div>
+
+          <Separator className="my-8" />
+
+          <div className="grid grid-cols-12 gap-4">
+            <div className="col-span-1 flex size-20 items-center justify-center rounded-lg border bg-muted p-4">
+              <Image
+                src={rocketseatIcon}
+                alt="Rocketseat"
+                className="size-12 dark:invert"
+              />
+            </div>
+            <div className="col-span-11 space-y-2">
+              <h3 className="text-xl font-bold leading-snug text-foreground">
+                React JS
+              </h3>
+              <p className="text-lg leading-normal text-foreground">
+                Rocketseat
+              </p>
+              <p className="text-sm leading-normal text-foreground">
+                Desenvolvimento de uma aplicação front-end em ReactJS, aplicação
+                dos conceitos de Propriedades, Estados e Componentes, tipagem
+                com Typescript, tooling com Vite, interface responsiva com
+                TailwindCSS, consumo de API Node.js, uso de URL states.
+              </p>
+              <p className="text-md leading-normal text-muted-foreground">
+                Emitido em março de 2022
+              </p>
+            </div>
+          </div>
+
+          <Separator className="my-8" />
+
+          <div className="mb-8 grid grid-cols-12 gap-4">
+            <div className="col-span-1 flex size-20 items-center justify-center rounded-sm border bg-muted p-4">
+              <Image src={microsoftIcon} alt="Rocketseat" className="size-12" />
+            </div>
+            <div className="col-span-11 space-y-2">
+              <h3 className="text-xl font-bold leading-snug text-foreground">
+                Programming in Html5 with JavaScript and CSS3
+              </h3>
+              <p className="text-ld leading-normal text-foreground">
+                Microsoft
+              </p>
+              <p className="text-sm leading-normal text-foreground">
+                Programação em Html5 com JavaScript e CSS3
+              </p>
+              <p className="leading-normal text-muted-foreground">
+                Emitido em abril de 2017
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   )

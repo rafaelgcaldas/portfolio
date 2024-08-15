@@ -29,7 +29,7 @@ export default function Home() {
     <main className="mx-auto max-w-[1200px] px-4 py-5">
       <section className="mb-24 flex max-w-[1200px] flex-col items-center justify-between lg:mb-20">
         <div className="grid h-[calc(100vh-200px)] w-full gap-4 lg:h-height lg:grid-cols-12 lg:gap-4">
-          <div className="flex flex-col items-center lg:col-span-6 lg:justify-center">
+          <div className="flex flex-col items-center justify-center lg:col-span-6">
             <div className="space-y-3 lg:space-y-5">
               <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
                 Olá, eu sou Rafael Gomes
@@ -67,7 +67,7 @@ export default function Home() {
 
           <div className="flex items-center justify-center lg:col-span-6">
             <div className="relative">
-              <div className="flex size-44 items-end justify-center overflow-hidden rounded-full border bg-slate-900">
+              <div className="flex size-40 items-end justify-center overflow-hidden rounded-full border bg-slate-900 lg:size-44">
                 <Image
                   src="/avatar.png"
                   width={163}
@@ -76,8 +76,8 @@ export default function Home() {
                 />
               </div>
               <div className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2">
-                <div className="relative h-72 w-72 rounded-full">
-                  <div className="absolute flex h-16 w-16 origin-[144px_144px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-0">
+                <div className="relative size-64 rounded-full lg:size-72">
+                  <div className="absolute flex h-16 w-16 origin-[128px_128px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-0 lg:origin-[144px_144px]">
                     <div className="animate-orbit-x animate-delay-0">
                       <Image
                         src={angularIcon}
@@ -86,7 +86,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="absolute flex h-16 w-16 origin-[144px_144px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-[2.5s]">
+                  <div className="absolute flex h-16 w-16 origin-[128px_128px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-[2.5s] lg:origin-[144px_144px]">
                     <div className="animate-orbit-x animate-delay-[2.5s]">
                       <Image
                         src={reactIcon}
@@ -95,7 +95,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="absolute flex h-16 w-16 origin-[144px_144px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-[5s]">
+                  <div className="absolute flex h-16 w-16 origin-[128px_128px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-[5s] lg:origin-[144px_144px]">
                     <div className="animate-orbit-x animate-delay-[5s]">
                       <Image
                         src={nextJsIcon}
@@ -104,7 +104,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="absolute flex h-16 w-16 origin-[144px_144px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-[7.5s]">
+                  <div className="absolute flex h-16 w-16 origin-[128px_128px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-[7.5s] lg:origin-[144px_144px]">
                     <div className="animate-orbit-x animate-delay-[7.5s]">
                       <Image
                         src={tailwindCssIcon}
@@ -113,7 +113,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="absolute flex h-16 w-16 origin-[144px_144px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-[10s]">
+                  <div className="absolute flex h-16 w-16 origin-[128px_128px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-[10s] lg:origin-[144px_144px]">
                     <div className="animate-orbit-x animate-delay-[10s]">
                       <Image
                         src={figmaIcon}
@@ -122,7 +122,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="absolute flex h-16 w-16 origin-[144px_144px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-[12.5s]">
+                  <div className="absolute flex h-16 w-16 origin-[128px_128px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-[12.5s] lg:origin-[144px_144px]">
                     <div className="animate-orbit-x animate-delay-[12.5s]">
                       <Image
                         src={nodeIcon}
@@ -131,7 +131,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="absolute flex h-16 w-16 origin-[144px_144px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-[15s]">
+                  <div className="absolute flex h-16 w-16 origin-[128px_128px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-[15s] lg:origin-[144px_144px]">
                     <div className="animate-orbit-x animate-delay-[15s]">
                       <Image
                         src={bootstrapIcon}
@@ -140,7 +140,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="absolute flex h-16 w-16 origin-[144px_144px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-[17.5s]">
+                  <div className="absolute flex h-16 w-16 origin-[128px_128px] animate-orbit items-center justify-center rounded-full bg-transparent font-bold text-white animate-delay-[17.5s] lg:origin-[144px_144px]">
                     <div className="animate-orbit-x animate-delay-[17.5s]">
                       <Image
                         src={typeScriptIcon}

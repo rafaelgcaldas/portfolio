@@ -5,7 +5,7 @@ export function Header() {
         <p className="cursor-pointer text-xl font-semibold leading-3 text-foreground">
           rafaelgomes
         </p>
-        <nav>
+        <nav className="hidden lg:block">
           <ul className="flex items-center gap-8">
             <li className="text-lg font-medium text-foreground hover:opacity-90">
               <a href="#">sobre</a>

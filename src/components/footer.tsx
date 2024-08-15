@@ -6,7 +6,7 @@ import linkedinIcon from '@/assets/linkedin-icon-1.svg'
 export function Footer() {
   return (
     <div className="w-full border-t">
-      <div className="mx-auto flex max-w-[1200px] items-end justify-between px-4 py-10">
+      <div className="mx-auto flex max-w-[1200px] flex-col justify-between gap-6 px-4 py-10 lg:flex-row lg:items-end">
         <div className="space-y-4">
           <a
             href="mailto:rafaelgcaldasdev@gmail.com"
@@ -38,7 +38,7 @@ export function Footer() {
         </div>
 
         <nav>
-          <ul className="flex items-end gap-8">
+          <ul className="flex flex-col gap-4 lg:flex-row lg:items-end lg:gap-8">
             <li className="text-lg font-medium text-foreground hover:opacity-90">
               <a href="#">sobre</a>
             </li>

@@ -27,7 +27,7 @@ export default function About() {
   return (
     <main className="mx-auto max-w-[1200px] px-4 py-5">
       <div className="mb-8 w-full rounded-lg border p-4">
-        <div className="flex h-56 w-full justify-between rounded-md bg-slate-50 p-8 dark:bg-slate-900">
+        <div className="flex h-48 w-full justify-between rounded-md bg-slate-50 p-8 dark:bg-slate-900 lg:h-56">
           <h1 className="text-3xl font-semibold">Olá...</h1>
           <div className="flex gap-6">
             <a href="https://github.com/rafaelgcaldas" target="_blank">
@@ -47,17 +47,17 @@ export default function About() {
             </a>
           </div>
         </div>
-        <div className="-mt-16 flex items-end gap-8">
+        <div className="-mt-16 flex flex-col items-center gap-8 lg:flex-row lg:items-end">
           <div className="flex flex-col items-center gap-4">
             <Avatar className="size-32">
               <AvatarImage src="https://github.com/rafaelgcaldas.png" />
               <AvatarFallback>RG</AvatarFallback>
             </Avatar>
-            <div className="space-y-3 text-center">
-              <h1 className="text-3xl font-extrabold tracking-tight">
+            <div className="space-y-2 text-center lg:space-y-3">
+              <h1 className="text-2xl font-extrabold tracking-tight lg:text-3xl">
                 Eu sou Rafael Gomes
               </h1>
-              <h3 className="text-2xl font-semibold tracking-tight">
+              <h3 className="text-xl font-semibold tracking-tight lg:text-2xl">
                 rafaelgcaldasdev@gmail.com
               </h3>
               <p className="max-w-sm leading-normal text-muted-foreground">
@@ -66,7 +66,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="flex flex-wrap items-end gap-4">
+          <div className="flex flex-wrap justify-center gap-4 lg:items-end">
             <div className="rounded-sm border p-2">
               <Image src={angularIcon} alt="Angular" className="size-10" />
             </div>
@@ -140,8 +140,8 @@ export default function About() {
       <section className="mb-8 w-full rounded-lg border p-4">
         <h2 className="mb-8 text-2xl font-semibold">Minha história</h2>
 
-        <div className="ml-4 space-y-4 leading-relaxed">
-          <p>
+        <div className="space-y-4 text-sm leading-relaxed lg:ml-4 lg:text-base">
+          <p className="">
             Apaixonado por tecnologia e com formação inicial em Técnico em
             mecânica, em 2014 resolvi de mudar de área e iniciei uma transição
             de carreira. Iniciei o curso de Ciência da computação pela
@@ -198,27 +198,45 @@ export default function About() {
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 Angular
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 React
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 TailwindCss
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 Bootstrap
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 TypeScript
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 NextJS
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 Saas
               </span>
@@ -242,15 +260,24 @@ export default function About() {
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 HTML
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 CSS
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 Javascript
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 JQuery
               </span>
@@ -278,31 +305,52 @@ export default function About() {
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 HTML
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 CSS
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 Angular
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 React
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 Bootstrap
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 TypeScript
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 Javascript
               </span>
-              <Separator orientation="vertical" className="h-5" />
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
                 NodeJS
               </span>
@@ -345,7 +393,7 @@ export default function About() {
         <h2 className="mb-8 text-2xl font-semibold">Certificados</h2>
 
         <div className="flex flex-col gap-6">
-          <div className="grid grid-cols-12 gap-4">
+          <div className="grid gap-4 lg:grid-cols-12">
             <div className="col-span-1 flex size-20 flex-1 items-center justify-center rounded-lg border bg-muted p-4">
               <Image
                 src={rocketseatIcon}
@@ -373,7 +421,7 @@ export default function About() {
 
           <Separator className="my-8" />
 
-          <div className="grid grid-cols-12 gap-4">
+          <div className="grid gap-4 lg:grid-cols-12">
             <div className="col-span-1 flex size-20 items-center justify-center rounded-lg border bg-muted p-4">
               <Image
                 src={rocketseatIcon}
@@ -402,7 +450,7 @@ export default function About() {
 
           <Separator className="my-8" />
 
-          <div className="mb-8 grid grid-cols-12 gap-4">
+          <div className="mb-8 grid gap-4 lg:grid-cols-12">
             <div className="col-span-1 flex size-20 items-center justify-center rounded-sm border bg-muted p-4">
               <Image src={microsoftIcon} alt="Rocketseat" className="size-12" />
             </div>

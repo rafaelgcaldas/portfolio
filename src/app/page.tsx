@@ -27,17 +27,17 @@ import { Separator } from '@/components/ui/separator'
 export default function Home() {
   return (
     <main className="mx-auto max-w-[1200px] px-4 py-5">
-      <section className="mb-16 flex max-w-[1200px] flex-col items-center justify-between">
-        <div className="grid h-height w-full grid-cols-12 gap-4">
-          <div className="col-span-6 flex flex-col items-center justify-center">
-            <div className="space-y-5">
-              <h1 className="text-5xl font-extrabold tracking-tight">
+      <section className="mb-24 flex max-w-[1200px] flex-col items-center justify-between lg:mb-20">
+        <div className="grid h-[calc(100vh-200px)] w-full gap-4 lg:grid-cols-12 lg:gap-4">
+          <div className="col-span-6 flex flex-col items-center lg:justify-center">
+            <div className="space-y-3 lg:space-y-5">
+              <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
                 Olá, eu sou Rafael Gomes
               </h1>
-              <h3 className="text-2xl font-semibold tracking-tight">
+              <h3 className="text-xl font-semibold tracking-tight lg:text-2xl">
                 Desenvolvedor Frontend
               </h3>
-              <p className="max-w-sm leading-normal text-muted-foreground">
+              <p className="text-sm leading-normal text-muted-foreground lg:max-w-sm">
                 Desenvolvendo interfaces modernas e interativas com foco na
                 experiência do usuário.
               </p>
@@ -153,19 +153,19 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <ArrowDown className="absolute bottom-0 left-1/2 -translate-x-1/2 animate-bounce" />
+          <ArrowDown className="absolute bottom-0 left-1/2 hidden -translate-x-1/2 animate-bounce lg:block" />
         </div>
       </section>
 
       <section>
-        <h2 className="mb-16 text-3xl font-bold tracking-tight">
+        <h2 className="mb-16 text-2xl font-bold tracking-tight lg:text-3xl">
           Meus trabalhos recentes
         </h2>
-        <div className="grid grid-cols-12 items-center gap-4">
-          <div className="col-start-7 -col-end-1 row-start-1 -row-end-1 flex flex-col items-end space-y-6">
-            <h2 className="text-2xl font-bold">IZagro CRM</h2>
-            <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 text-right shadow-md dark:bg-slate-900">
-              <p className="font-light text-foreground">
+        <div className="grid items-center lg:grid-cols-12 lg:gap-4 lg:p-6">
+          <div className="col-start-7 -col-end-1 row-start-1 -row-end-1 mb-4 flex flex-col space-y-6 lg:items-end">
+            <h2 className="text-xl font-bold lg:text-2xl">IZagro CRM</h2>
+            <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 dark:bg-slate-900 lg:text-right lg:shadow-md">
+              <p className="text-sm font-light text-foreground lg:text-base">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                 viverra urna eget sapien blandit, non sollicitudin augue congue.
                 Donec condimentum augue viverra, feugiat arcu quis, elementum
@@ -174,37 +174,49 @@ export default function Home() {
               </p>
             </div>
             <div className="flex gap-4">
-              <div className="flex items-center gap-4">
-                <Image src={angularIcon} alt="Angular" className="size-10" />
-                <Image src={htmlIcon} alt="Html" className="size-9" />
-                <Image src={sassIcon} alt="Sass" className="size-10" />
+              <div className="flex w-full items-center justify-between gap-4">
+                <Image
+                  src={angularIcon}
+                  alt="Angular"
+                  className="size-8 lg:size-10"
+                />
+                <Image src={htmlIcon} alt="Html" className="size-7 lg:size-9" />
+                <Image
+                  src={sassIcon}
+                  alt="Sass"
+                  className="size-8 lg:size-10"
+                />
                 <Image
                   src={typeScriptIcon}
                   alt="TypeScript"
-                  className="size-10"
+                  className="size-8 lg:size-10"
                 />
                 <Image
                   src={bootstrapIcon}
                   alt="Bootstrap"
                   className="size-12"
                 />
-                <Image src={springIcon} alt="Spring boot" className="size-10" />
+                <Image
+                  src={springIcon}
+                  alt="Spring boot"
+                  className="size-8 lg:size-10"
+                />
               </div>
             </div>
           </div>
-          <div className="relative z-10 col-start-1 col-end-8 row-start-1 -row-end-1">
+          <div className="relative z-10 col-start-1 col-end-8 lg:row-start-1 lg:-row-end-1">
             <div className="w-full rounded-md bg-gradient-to-r from-sky-500/10 to-indigo-500/40">
               <Image src={crmImage} alt="CRM image" />
             </div>
           </div>
         </div>
 
-        <Separator className="my-20" />
+        <Separator className="my-16 lg:my-20" />
 
-        <div className="grid grid-cols-12 items-center gap-4">
-          <div className="col-start-1 col-end-7 row-start-1 -row-end-1 flex flex-col space-y-6">
+        <div className="grid items-center lg:grid-cols-12 lg:gap-4 lg:p-6">
+          <div className="col-start-1 col-end-7 row-start-1 -row-end-1 mb-4 flex flex-col space-y-6">
             <h2 className="text-2xl font-bold">Marketplace IZagro</h2>
-            <div className="relative z-20 h-40 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
+            <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
               <p className="font-light text-foreground">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                 viverra urna eget sapien blandit, non sollicitudin augue congue.
@@ -213,35 +225,47 @@ export default function Home() {
                 est venenatis augue, ac hendrerit libero justo ornare dui.
               </p>
             </div>
-            <div className="flex gap-4">
-              <Image className="size-10" src={reactIcon} alt="React" />
+            <div className="flex justify-between gap-6 lg:justify-start">
               <Image
-                className="size-10 dark:invert"
+                className="size-8 lg:size-10"
+                src={reactIcon}
+                alt="React"
+              />
+              <Image
+                className="size-8 dark:invert lg:size-10"
                 src={nextJsIcon}
                 alt="NextJS"
               />
-              <Image className="size-10" src={chakraUiIcon} alt="Chakra UI" />
               <Image
-                className="size-10"
+                className="size-8 lg:size-10"
+                src={chakraUiIcon}
+                alt="Chakra UI"
+              />
+              <Image
+                className="size-8 lg:size-10"
                 src={typeScriptIcon}
                 alt="TypeScript"
               />
-              <Image className="size-10" src={springIcon} alt="Spring boot" />
+              <Image
+                className="size-8 lg:size-10"
+                src={springIcon}
+                alt="Spring boot"
+              />
             </div>
           </div>
-          <div className="relative z-10 col-start-6 -col-end-1 row-start-1 -row-end-1">
+          <div className="relative z-10 col-start-1 col-end-8 lg:col-start-6 lg:-col-end-1 lg:row-start-1 lg:-row-end-1">
             <div className="w-full rounded-md bg-gradient-to-r from-indigo-500/10 to-sky-500/40">
               <Image src={marketplaceImage} alt="CRM image" />
             </div>
           </div>
         </div>
 
-        <Separator className="my-20" />
+        <Separator className="my-16 lg:my-20" />
 
-        <div className="grid grid-cols-12 items-center gap-4">
-          <div className="col-start-7 -col-end-1 row-start-1 -row-end-1 flex flex-col items-end space-y-6">
+        <div className="grid items-center lg:grid-cols-12 lg:gap-4 lg:p-6">
+          <div className="col-start-7 -col-end-1 row-start-1 -row-end-1 mb-4 flex flex-col space-y-6 lg:items-end">
             <h2 className="text-2xl font-bold">IZagro Survey</h2>
-            <div className="relative z-20 h-40 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
+            <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
               <p className="font-light text-foreground">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                 viverra urna eget sapien blandit, non sollicitudin augue congue.
@@ -250,33 +274,45 @@ export default function Home() {
                 est venenatis augue, ac hendrerit libero justo ornare dui.
               </p>
             </div>
-            <div className="flex items-center gap-4">
-              <Image src={angularIcon} alt="Angular" className="size-10" />
-              <Image src={htmlIcon} alt="Html" className="size-9" />
-              <Image src={sassIcon} alt="Sass" className="size-10" />
+            <div className="flex items-center justify-between gap-4">
+              <Image
+                src={angularIcon}
+                alt="Angular"
+                className="size-8 lg:size-10"
+              />
+              <Image src={htmlIcon} alt="Html" className="size-7 lg:size-9" />
+              <Image src={sassIcon} alt="Sass" className="size-8 lg:size-10" />
               <Image
                 src={typeScriptIcon}
                 alt="TypeScript"
-                className="size-10"
+                className="size-8 lg:size-10"
               />
-              <Image src={bootstrapIcon} alt="Bootstrap" className="size-12" />
-              <Image src={pwaIcon} alt="PWA" className="size-16" />
-              <Image src={springIcon} alt="Spring boot" className="size-10" />
+              <Image
+                src={bootstrapIcon}
+                alt="Bootstrap"
+                className="size-10 lg:size-12"
+              />
+              <Image src={pwaIcon} alt="PWA" className="size-14 lg:size-16" />
+              <Image
+                src={springIcon}
+                alt="Spring boot"
+                className="size-8 lg:size-10"
+              />
             </div>
           </div>
-          <div className="relative z-10 col-start-1 col-end-8 row-start-1 -row-end-1">
+          <div className="relative z-10 col-start-1 col-end-8 lg:row-start-1 lg:-row-end-1">
             <div className="w-full rounded-md bg-gradient-to-r from-sky-500/10 to-indigo-500/40 p-4">
               <Image src={surveyImage} alt="CRM image" />
             </div>
           </div>
         </div>
 
-        <Separator className="my-20" />
+        <Separator className="my-16 lg:my-20" />
 
-        <div className="mb-36 grid grid-cols-12 items-center gap-4">
-          <div className="col-start-1 col-end-7 row-start-1 -row-end-1 flex flex-col space-y-6">
+        <div className="mb-36 grid items-center lg:grid-cols-12 lg:gap-4 lg:p-6">
+          <div className="col-start-1 col-end-7 row-start-1 -row-end-1 mb-4 flex flex-col space-y-6">
             <h2 className="text-2xl font-bold">Portal de fidelidade</h2>
-            <div className="relative z-20 h-40 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
+            <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
               <p className="font-light text-foreground">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                 viverra urna eget sapien blandit, non sollicitudin augue congue.
@@ -285,32 +321,36 @@ export default function Home() {
                 est venenatis augue, ac hendrerit libero justo ornare dui.
               </p>
             </div>
-            <div className="flex gap-4">
-              <Image className="size-10" src={reactIcon} alt="React" />
+            <div className="flex justify-between gap-6 lg:justify-start">
               <Image
-                className="size-10 dark:invert"
+                className="size-8 lg:size-10"
+                src={reactIcon}
+                alt="React"
+              />
+              <Image
+                className="size-8 dark:invert lg:size-10"
                 src={nextJsIcon}
                 alt="NextJS"
               />
               <Image
-                className="size-10"
+                className="size-8 lg:size-10"
                 src={tailwindCssIcon}
                 alt="TailwindCss"
               />
               <Image
-                className="size-10 dark:invert"
+                className="size-8 dark:invert lg:size-10"
                 src={radixUiIcon}
                 alt="Radix UI"
               />
               <Image
-                className="size-10"
+                className="size-8 lg:size-10"
                 src={typeScriptIcon}
                 alt="TypeScript"
               />
               <Image className="size-10" src={springIcon} alt="Spring boot" />
             </div>
           </div>
-          <div className="relative z-10 col-start-6 -col-end-1 row-start-1 -row-end-1">
+          <div className="relative z-10 col-start-1 col-end-8 lg:col-start-6 lg:-col-end-1 lg:row-start-1 lg:-row-end-1">
             <div className="w-full rounded-md bg-gradient-to-r from-indigo-500/10 to-sky-500/40">
               <Image src={portalImage} alt="CRM image" />
             </div>

@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import githubIcon from '@/assets/github-icon.svg'
 import linkedinIcon from '@/assets/linkedin-icon-1.svg'
+import Link from 'next/link'
 
 export function Footer() {
   return (
@@ -40,10 +41,10 @@ export function Footer() {
         <nav>
           <ul className="flex flex-col gap-4 lg:flex-row lg:items-end lg:gap-8">
             <li className="text-lg font-medium text-foreground hover:opacity-90">
-              <a href="#">sobre</a>
+              <Link href="/about">sobre</Link>
             </li>
             <li className="text-lg font-medium text-foreground hover:opacity-90">
-              <a href="#">projetos</a>
+              <a href="#projects">projetos</a>
             </li>
             <li className="text-lg font-medium text-foreground hover:opacity-90">
               <a href="#">currículo</a>

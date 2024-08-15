@@ -28,8 +28,8 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-[1200px] px-4 py-5">
       <section className="mb-24 flex max-w-[1200px] flex-col items-center justify-between lg:mb-20">
-        <div className="grid h-[calc(100vh-200px)] w-full gap-4 lg:grid-cols-12 lg:gap-4">
-          <div className="col-span-6 flex flex-col items-center lg:justify-center">
+        <div className="grid h-[calc(100vh-200px)] w-full gap-4 lg:h-height lg:grid-cols-12 lg:gap-4">
+          <div className="flex flex-col items-center lg:col-span-6 lg:justify-center">
             <div className="space-y-3 lg:space-y-5">
               <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
                 Olá, eu sou Rafael Gomes
@@ -65,7 +65,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="col-span-6 flex items-center justify-center">
+          <div className="flex items-center justify-center lg:col-span-6">
             <div className="relative">
               <div className="flex size-44 items-end justify-center overflow-hidden rounded-full border bg-slate-900">
                 <Image
@@ -153,12 +153,18 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <ArrowDown className="absolute bottom-0 left-1/2 hidden -translate-x-1/2 animate-bounce lg:block" />
+
+          <a
+            className="absolute bottom-0 left-1/2 hidden -translate-x-1/2 animate-bounce lg:block"
+            href="#projects"
+          >
+            <ArrowDown />
+          </a>
         </div>
       </section>
 
-      <section>
-        <h2 className="mb-16 text-2xl font-bold tracking-tight lg:text-3xl">
+      <section className="mt-4" id="projects">
+        <h2 className="mb-10 text-2xl font-bold tracking-tight lg:mb-12 lg:text-3xl">
           Meus trabalhos recentes
         </h2>
         <div className="grid items-center lg:grid-cols-12 lg:gap-4 lg:p-6">

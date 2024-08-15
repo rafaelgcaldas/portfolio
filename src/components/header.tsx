@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ThemeSwitcher } from './theme-switcher'
 
 export function Header() {
   return (
@@ -9,6 +10,9 @@ export function Header() {
         </p>
         <nav className="hidden lg:block">
           <ul className="flex items-center gap-8">
+            <li className="text-lg font-medium text-foreground hover:opacity-90">
+              <ThemeSwitcher />
+            </li>
             <li className="text-lg font-medium text-foreground hover:opacity-90">
               <Link href="/about">sobre</Link>
             </li>

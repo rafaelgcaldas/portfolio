@@ -30,7 +30,11 @@ export default function About() {
         <div className="flex h-48 w-full justify-between rounded-md bg-slate-50 p-8 dark:bg-slate-900 lg:h-56">
           <h1 className="text-3xl font-semibold">Olá...</h1>
           <div className="flex gap-6">
-            <a href="https://github.com/rafaelgcaldas" target="_blank">
+            <a
+              href="https://github.com/rafaelgcaldas"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Image
                 src={githubIcon}
                 className="size-6 dark:invert"
@@ -38,7 +42,11 @@ export default function About() {
               />
             </a>
 
-            <a href="https://www.linkedin.com/in/rafaelgcaldas" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/rafaelgcaldas"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Image
                 src={linkedinIcon}
                 className="size-6 dark:invert"

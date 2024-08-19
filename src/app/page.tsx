@@ -43,7 +43,11 @@ export default function Home() {
               </p>
 
               <div className="flex gap-6">
-                <a href="https://github.com/rafaelgcaldas" target="_blank">
+                <a
+                  href="https://github.com/rafaelgcaldas"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <Image
                     src={githubIcon}
                     className="size-6 dark:invert"
@@ -163,7 +167,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-4" id="projects">
+      <section className="pt-4" id="projects">
         <h2 className="mb-10 text-2xl font-bold tracking-tight lg:mb-12 lg:text-3xl">
           Meus trabalhos recentes
         </h2>

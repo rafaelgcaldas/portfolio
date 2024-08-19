@@ -20,7 +20,11 @@ export function Footer() {
           </p>
 
           <div className="flex gap-6">
-            <a href="https://github.com/rafaelgcaldas" target="_blank">
+            <a
+              href="https://github.com/rafaelgcaldas"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Image
                 src={githubIcon}
                 className="size-6 dark:invert"
@@ -28,7 +32,11 @@ export function Footer() {
               />
             </a>
 
-            <a href="https://www.linkedin.com/in/rafaelgcaldas" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/rafaelgcaldas"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Image
                 src={linkedinIcon}
                 className="size-6 dark:invert"
@@ -47,7 +55,13 @@ export function Footer() {
               <a href="#projects">projetos</a>
             </li>
             <li className="text-lg font-medium text-foreground hover:opacity-90">
-              <a href="#">currículo</a>
+              <a
+                href="https://drive.google.com/file/d/1oqoi5GoOG15s4OucCnIHHET-uHhYhwLY/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                currículo
+              </a>
             </li>
           </ul>
         </nav>

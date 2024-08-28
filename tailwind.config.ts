@@ -84,6 +84,14 @@ const config = {
           from: { opacity: '0' },
           to: { opacity: '1' },
         },
+        shimmer: {
+          '0%, 90%, 100%': {
+            'background-position': 'calc(-100% - var(--shimmer-width)) 0',
+          },
+          '30%, 60%': {
+            'background-position': 'calc(100% + var(--shimmer-width)) 0',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -91,6 +99,7 @@ const config = {
         orbit: 'orbit 20s linear infinite',
         'orbit-x': 'orbit-x 20s linear infinite',
         'fade-in': 'fade-in forwards',
+        shimmer: 'shimmer 8s infinite',
       },
     },
   },

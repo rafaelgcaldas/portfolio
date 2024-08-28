@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import AnimatedShinyText from './animated -shiny-text'
 import { Navigation } from './navigation'
 import { ThemeSwitcher } from './theme-switcher'
 
@@ -6,9 +7,12 @@ export function Header() {
   return (
     <div className="w-full border-b">
       <header className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-5">
-        <p className="cursor-pointer text-xl font-semibold leading-3 text-foreground">
+        {/* <p className="cursor-pointer text-xl font-semibold leading-3 text-foreground">
           <Link href="/">rafaelgomes</Link>
-        </p>
+        </p> */}
+        <AnimatedShinyText className="cursor-pointer text-xl font-semibold leading-3">
+          <Link href="/">rafaelgomes</Link>
+        </AnimatedShinyText>
         <div className="flex items-center justify-center gap-2 lg:gap-6">
           <nav className="hidden lg:block">
             <ul className="flex items-center gap-8">

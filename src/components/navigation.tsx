@@ -15,7 +15,7 @@ export function Navigation() {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>
-            <Menu className="size-4" />
+            <Menu className="size-5" />
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <NavigationMenuLink asChild>

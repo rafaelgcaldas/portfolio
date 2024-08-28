@@ -21,7 +21,7 @@ const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({
         } as CSSProperties
       }
       className={cn(
-        'text-zinc-600/70 dark:text-neutral-400/70',
+        'text-zinc-700/70 dark:text-zinc-300/70',
 
         // Shimmer effect
         'animate-shimmer bg-clip-text bg-no-repeat [background-position:0_0] [background-size:var(--shimmer-width)_100%] [transition:background-position_1s_cubic-bezier(.6,.6,0,1)_infinite]',

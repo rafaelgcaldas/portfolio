@@ -7,10 +7,7 @@ export function Header() {
   return (
     <div className="w-full border-b">
       <header className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-5">
-        {/* <p className="cursor-pointer text-xl font-semibold leading-3 text-foreground">
-          <Link href="/">rafaelgomes</Link>
-        </p> */}
-        <AnimatedShinyText className="cursor-pointer text-xl font-semibold leading-3">
+        <AnimatedShinyText className="cursor-pointer text-xl font-semibold">
           <Link href="/">rafaelgomes</Link>
         </AnimatedShinyText>
         <div className="flex items-center justify-center gap-2 lg:gap-6">

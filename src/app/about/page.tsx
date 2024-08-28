@@ -4,24 +4,12 @@ import Image from 'next/image'
 import githubIcon from '@/assets/github-icon.svg'
 import linkedinIcon from '@/assets/linkedin-icon-1.svg'
 
-import angularIcon from '@/assets/angular.svg'
-import bootstrapIcon from '@/assets/bootstrap.svg'
-import chakraUiIcon from '@/assets/chakra-ui.svg'
-import cssIcon from '@/assets/css.svg'
-import figmaIcon from '@/assets/figma-icon.svg'
-import htmlIcon from '@/assets/html.svg'
-import javaScriptIcon from '@/assets/javascript.svg'
 import microsoftIcon from '@/assets/microsoft.svg'
-import nextJsIcon from '@/assets/next-js.svg'
-import nodeIcon from '@/assets/nodejs-icon.svg'
-import pwaIcon from '@/assets/pwa.svg'
-import radixUiIcon from '@/assets/radix-ui.svg'
-import reactIcon from '@/assets/react.svg'
 import rocketseatIcon from '@/assets/rocketseat.svg'
-import sassIcon from '@/assets/sas.svg'
-import tailwindCssIcon from '@/assets/tailwindcss.svg'
-import typeScriptIcon from '@/assets/typescript.svg'
 import { Separator } from '@/components/ui/separator'
+
+import { SocialMedia } from '../../components/social-media'
+import { Technologies } from './technologies'
 
 export default function About() {
   return (
@@ -30,29 +18,16 @@ export default function About() {
         <div className="flex h-48 w-full justify-between rounded-md bg-slate-50 p-8 dark:bg-slate-900 lg:h-56">
           <h1 className="text-3xl font-semibold">Olá...</h1>
           <div className="flex gap-6">
-            <a
+            <SocialMedia
+              icon={githubIcon}
+              delay={0.1}
               href="https://github.com/rafaelgcaldas"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <Image
-                src={githubIcon}
-                className="size-6 dark:invert"
-                alt="react"
-              />
-            </a>
-
-            <a
+            />
+            <SocialMedia
+              icon={linkedinIcon}
+              delay={0.3}
               href="https://www.linkedin.com/in/rafaelgcaldas"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <Image
-                src={linkedinIcon}
-                className="size-6 dark:invert"
-                alt="react"
-              />
-            </a>
+            />
           </div>
         </div>
         <div className="-mt-16 flex flex-col items-center gap-8 lg:flex-row lg:items-end">
@@ -74,74 +49,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 lg:items-end">
-            <div className="rounded-sm border p-2">
-              <Image src={angularIcon} alt="Angular" className="size-10" />
-            </div>
-            <div className="rounded-sm border p-2">
-              <Image src={reactIcon} alt="React" className="size-10" />
-            </div>
-
-            <div className="rounded-sm border p-2">
-              <Image
-                src={nextJsIcon}
-                alt="Nextjs"
-                className="size-10 dark:invert"
-              />
-            </div>
-            <div className="rounded-sm border p-2">
-              <Image src={htmlIcon} alt="HTML 5" className="size-10" />
-            </div>
-            <div className="rounded-sm border p-2">
-              <Image src={cssIcon} alt="CSS 3" className="size-10" />
-            </div>
-            <div className="rounded-sm border p-2">
-              <Image
-                src={javaScriptIcon}
-                alt="Javascript"
-                className="size-10"
-              />
-            </div>
-            <div className="rounded-sm border p-2">
-              <Image src={sassIcon} alt="SASS" className="size-10" />
-            </div>
-            <div className="rounded-sm border p-2">
-              <Image src={nodeIcon} alt="NodeJS" className="size-10" />
-            </div>
-            <div className="rounded-sm border p-2">
-              <Image
-                src={tailwindCssIcon}
-                alt="TailwindCSS"
-                className="size-10"
-              />
-            </div>
-            <div className="rounded-sm border p-2">
-              <Image src={bootstrapIcon} alt="Bootstrap" className="size-10" />
-            </div>
-            <div className="rounded-sm border p-2">
-              <Image src={chakraUiIcon} alt="Chakra-ui" className="size-10" />
-            </div>
-            <div className="rounded-sm border p-2">
-              <Image
-                src={radixUiIcon}
-                alt="Radix-ui"
-                className="size-10 dark:invert"
-              />
-            </div>
-            <div className="rounded-sm border p-2">
-              <Image
-                src={typeScriptIcon}
-                alt="TypeScript"
-                className="size-10"
-              />
-            </div>
-            <div className="rounded-sm border p-2">
-              <Image src={pwaIcon} alt="PWA" className="size-10" />
-            </div>
-            <div className="rounded-sm border p-2">
-              <Image src={figmaIcon} alt="Figma" className="size-10" />
-            </div>
-          </div>
+          <Technologies />
         </div>
       </div>
 

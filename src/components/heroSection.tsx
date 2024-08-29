@@ -29,8 +29,8 @@ export function HeroSection() {
             words="Olá, eu sou Rafael Gomes"
           />
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, visibility: 'hidden', y: 20 }}
+            animate={{ opacity: 1, visibility: 'visible', y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
             className="space-y-3 lg:space-y-5"
           >

@@ -44,9 +44,9 @@ export function Technologies() {
         <motion.div
           key={index}
           className="rounded-sm border p-2"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.15, delay: index * 0.1 }}
+          initial={{ opacity: 0, visibility: 'hidden', y: 50 }}
+          animate={{ opacity: 1, visibility: 'visible', y: 0 }}
+          transition={{ duration: 0.3, delay: index * 0.1 }}
         >
           <Image
             src={icon.src}

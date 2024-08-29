@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 
 import angularIcon from '@/assets/angular.svg'
@@ -20,6 +18,8 @@ import marketplaceImage from '@/assets/images/banner-3.webp'
 import surveyImage from '@/assets/images/banner-4.webp'
 import portalImage from '@/assets/images/banner-5.webp'
 import { HeroSection } from '@/components/heroSection'
+import { JobsWrraper } from '@/components/jobs-wrraper'
+import { TitleWrraper } from '@/components/title-wrraper'
 import { Separator } from '@/components/ui/separator'
 
 export default function Home() {
@@ -33,20 +33,140 @@ export default function Home() {
         <h2 className="mb-10 text-2xl font-bold tracking-tight lg:mb-12 lg:text-3xl">
           Meus trabalhos recentes
         </h2>
-        <div className="grid items-center lg:grid-cols-12 lg:gap-4 lg:p-6">
-          <div className="col-start-7 -col-end-1 row-start-1 -row-end-1 mb-4 flex flex-col space-y-6 lg:items-end">
-            <h2 className="text-xl font-bold lg:text-2xl">IZagro CRM</h2>
-            <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 dark:bg-slate-900 lg:text-right lg:shadow-md">
-              <p className="text-sm font-light text-foreground lg:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                viverra urna eget sapien blandit, non sollicitudin augue congue.
-                Donec condimentum augue viverra, feugiat arcu quis, elementum
-                turpis. Vivamus varius, magna quis facilisis convallis, velit
-                est venenatis augue, ac hendrerit libero justo ornare dui.
-              </p>
+
+        <JobsWrraper>
+          <div className="grid items-center lg:grid-cols-12 lg:gap-4 lg:p-6">
+            <div className="col-start-7 -col-end-1 row-start-1 -row-end-1 mb-4 flex flex-col space-y-6 lg:items-end">
+              <TitleWrraper>
+                <h2 className="text-xl font-bold lg:text-2xl">IZagro CRM</h2>
+              </TitleWrraper>
+              <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 dark:bg-slate-900 lg:text-right lg:shadow-md">
+                <p className="text-sm font-light text-foreground lg:text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  viverra urna eget sapien blandit, non sollicitudin augue
+                  congue. Donec condimentum augue viverra, feugiat arcu quis,
+                  elementum turpis. Vivamus varius, magna quis facilisis
+                  convallis, velit est venenatis augue, ac hendrerit libero
+                  justo ornare dui.
+                </p>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex w-full items-center justify-between gap-4">
+                  <Image
+                    src={angularIcon}
+                    alt="Angular"
+                    className="size-8 lg:size-10"
+                  />
+                  <Image
+                    src={htmlIcon}
+                    alt="Html"
+                    className="size-7 lg:size-9"
+                  />
+                  <Image
+                    src={sassIcon}
+                    alt="Sass"
+                    className="size-8 lg:size-10"
+                  />
+                  <Image
+                    src={typeScriptIcon}
+                    alt="TypeScript"
+                    className="size-8 lg:size-10"
+                  />
+                  <Image
+                    src={bootstrapIcon}
+                    alt="Bootstrap"
+                    className="size-12"
+                  />
+                  <Image
+                    src={springIcon}
+                    alt="Spring boot"
+                    className="size-8 lg:size-10"
+                  />
+                </div>
+              </div>
             </div>
-            <div className="flex gap-4">
-              <div className="flex w-full items-center justify-between gap-4">
+
+            <div className="relative z-10 col-start-1 col-end-8 lg:row-start-1 lg:-row-end-1">
+              <div className="w-full rounded-md bg-gradient-to-r from-sky-500/10 to-indigo-500/40">
+                <Image src={crmImage} alt="CRM image" />
+              </div>
+            </div>
+          </div>
+        </JobsWrraper>
+
+        <Separator className="my-16 lg:my-20" />
+
+        <JobsWrraper>
+          <div className="grid items-center lg:grid-cols-12 lg:gap-4 lg:p-6">
+            <div className="col-start-1 col-end-7 row-start-1 -row-end-1 mb-4 flex flex-col space-y-6">
+              <TitleWrraper>
+                <h2 className="text-2xl font-bold">Marketplace IZagro</h2>
+              </TitleWrraper>
+              <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
+                <p className="font-light text-foreground">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  viverra urna eget sapien blandit, non sollicitudin augue
+                  congue. Donec condimentum augue viverra, feugiat arcu quis,
+                  elementum turpis. Vivamus varius, magna quis facilisis
+                  convallis, velit est venenatis augue, ac hendrerit libero
+                  justo ornare dui.
+                </p>
+              </div>
+              <div className="flex justify-between gap-6 lg:justify-start">
+                <Image
+                  className="size-8 lg:size-10"
+                  src={reactIcon}
+                  alt="React"
+                />
+                <Image
+                  className="size-8 dark:invert lg:size-10"
+                  src={nextJsIcon}
+                  alt="NextJS"
+                />
+                <Image
+                  className="size-8 lg:size-10"
+                  src={chakraUiIcon}
+                  alt="Chakra UI"
+                />
+                <Image
+                  className="size-8 lg:size-10"
+                  src={typeScriptIcon}
+                  alt="TypeScript"
+                />
+                <Image
+                  className="size-8 lg:size-10"
+                  src={springIcon}
+                  alt="Spring boot"
+                />
+              </div>
+            </div>
+            <div className="relative z-10 col-start-1 col-end-8 lg:col-start-6 lg:-col-end-1 lg:row-start-1 lg:-row-end-1">
+              <div className="w-full rounded-md bg-gradient-to-r from-indigo-500/10 to-sky-500/40">
+                <Image src={marketplaceImage} alt="CRM image" />
+              </div>
+            </div>
+          </div>
+        </JobsWrraper>
+
+        <Separator className="my-16 lg:my-20" />
+
+        <JobsWrraper>
+          <div className="grid items-center lg:grid-cols-12 lg:gap-4 lg:p-6">
+            <div className="col-start-7 -col-end-1 row-start-1 -row-end-1 mb-4 flex flex-col space-y-6 lg:items-end">
+              <TitleWrraper>
+                <h2 className="text-2xl font-bold">IZagro Survey</h2>
+              </TitleWrraper>
+              <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
+                <p className="font-light text-foreground">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  viverra urna eget sapien blandit, non sollicitudin augue
+                  congue. Donec condimentum augue viverra, feugiat arcu quis,
+                  elementum turpis. Vivamus varius, magna quis facilisis
+                  convallis, velit est venenatis augue, ac hendrerit libero
+                  justo ornare dui.
+                </p>
+              </div>
+              <div className="flex items-center justify-between gap-4">
                 <Image
                   src={angularIcon}
                   alt="Angular"
@@ -66,8 +186,9 @@ export default function Home() {
                 <Image
                   src={bootstrapIcon}
                   alt="Bootstrap"
-                  className="size-12"
+                  className="size-10 lg:size-12"
                 />
+                <Image src={pwaIcon} alt="PWA" className="size-14 lg:size-16" />
                 <Image
                   src={springIcon}
                   alt="Spring boot"
@@ -75,159 +196,68 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
-          <div className="relative z-10 col-start-1 col-end-8 lg:row-start-1 lg:-row-end-1">
-            <div className="w-full rounded-md bg-gradient-to-r from-sky-500/10 to-indigo-500/40">
-              <Image src={crmImage} alt="CRM image" />
+            <div className="relative z-10 col-start-1 col-end-8 lg:row-start-1 lg:-row-end-1">
+              <div className="w-full rounded-md bg-gradient-to-r from-sky-500/10 to-indigo-500/40 p-4">
+                <Image src={surveyImage} alt="CRM image" />
+              </div>
             </div>
           </div>
-        </div>
+        </JobsWrraper>
 
         <Separator className="my-16 lg:my-20" />
 
-        <div className="grid items-center lg:grid-cols-12 lg:gap-4 lg:p-6">
-          <div className="col-start-1 col-end-7 row-start-1 -row-end-1 mb-4 flex flex-col space-y-6">
-            <h2 className="text-2xl font-bold">Marketplace IZagro</h2>
-            <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
-              <p className="font-light text-foreground">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                viverra urna eget sapien blandit, non sollicitudin augue congue.
-                Donec condimentum augue viverra, feugiat arcu quis, elementum
-                turpis. Vivamus varius, magna quis facilisis convallis, velit
-                est venenatis augue, ac hendrerit libero justo ornare dui.
-              </p>
+        <JobsWrraper>
+          <div className="mb-36 grid items-center lg:grid-cols-12 lg:gap-4 lg:p-6">
+            <div className="col-start-1 col-end-7 row-start-1 -row-end-1 mb-4 flex flex-col space-y-6">
+              <TitleWrraper>
+                <h2 className="text-2xl font-bold">Portal de fidelidade</h2>
+              </TitleWrraper>
+              <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
+                <p className="font-light text-foreground">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  viverra urna eget sapien blandit, non sollicitudin augue
+                  congue. Donec condimentum augue viverra, feugiat arcu quis,
+                  elementum turpis. Vivamus varius, magna quis facilisis
+                  convallis, velit est venenatis augue, ac hendrerit libero
+                  justo ornare dui.
+                </p>
+              </div>
+              <div className="flex justify-between gap-6 lg:justify-start">
+                <Image
+                  className="size-8 lg:size-10"
+                  src={reactIcon}
+                  alt="React"
+                />
+                <Image
+                  className="size-8 dark:invert lg:size-10"
+                  src={nextJsIcon}
+                  alt="NextJS"
+                />
+                <Image
+                  className="size-8 lg:size-10"
+                  src={tailwindCssIcon}
+                  alt="TailwindCss"
+                />
+                <Image
+                  className="size-8 dark:invert lg:size-10"
+                  src={radixUiIcon}
+                  alt="Radix UI"
+                />
+                <Image
+                  className="size-8 lg:size-10"
+                  src={typeScriptIcon}
+                  alt="TypeScript"
+                />
+                <Image className="size-10" src={springIcon} alt="Spring boot" />
+              </div>
             </div>
-            <div className="flex justify-between gap-6 lg:justify-start">
-              <Image
-                className="size-8 lg:size-10"
-                src={reactIcon}
-                alt="React"
-              />
-              <Image
-                className="size-8 dark:invert lg:size-10"
-                src={nextJsIcon}
-                alt="NextJS"
-              />
-              <Image
-                className="size-8 lg:size-10"
-                src={chakraUiIcon}
-                alt="Chakra UI"
-              />
-              <Image
-                className="size-8 lg:size-10"
-                src={typeScriptIcon}
-                alt="TypeScript"
-              />
-              <Image
-                className="size-8 lg:size-10"
-                src={springIcon}
-                alt="Spring boot"
-              />
-            </div>
-          </div>
-          <div className="relative z-10 col-start-1 col-end-8 lg:col-start-6 lg:-col-end-1 lg:row-start-1 lg:-row-end-1">
-            <div className="w-full rounded-md bg-gradient-to-r from-indigo-500/10 to-sky-500/40">
-              <Image src={marketplaceImage} alt="CRM image" />
-            </div>
-          </div>
-        </div>
-
-        <Separator className="my-16 lg:my-20" />
-
-        <div className="grid items-center lg:grid-cols-12 lg:gap-4 lg:p-6">
-          <div className="col-start-7 -col-end-1 row-start-1 -row-end-1 mb-4 flex flex-col space-y-6 lg:items-end">
-            <h2 className="text-2xl font-bold">IZagro Survey</h2>
-            <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
-              <p className="font-light text-foreground">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                viverra urna eget sapien blandit, non sollicitudin augue congue.
-                Donec condimentum augue viverra, feugiat arcu quis, elementum
-                turpis. Vivamus varius, magna quis facilisis convallis, velit
-                est venenatis augue, ac hendrerit libero justo ornare dui.
-              </p>
-            </div>
-            <div className="flex items-center justify-between gap-4">
-              <Image
-                src={angularIcon}
-                alt="Angular"
-                className="size-8 lg:size-10"
-              />
-              <Image src={htmlIcon} alt="Html" className="size-7 lg:size-9" />
-              <Image src={sassIcon} alt="Sass" className="size-8 lg:size-10" />
-              <Image
-                src={typeScriptIcon}
-                alt="TypeScript"
-                className="size-8 lg:size-10"
-              />
-              <Image
-                src={bootstrapIcon}
-                alt="Bootstrap"
-                className="size-10 lg:size-12"
-              />
-              <Image src={pwaIcon} alt="PWA" className="size-14 lg:size-16" />
-              <Image
-                src={springIcon}
-                alt="Spring boot"
-                className="size-8 lg:size-10"
-              />
+            <div className="relative z-10 col-start-1 col-end-8 lg:col-start-6 lg:-col-end-1 lg:row-start-1 lg:-row-end-1">
+              <div className="w-full rounded-md bg-gradient-to-r from-indigo-500/10 to-sky-500/40">
+                <Image src={portalImage} alt="CRM image" />
+              </div>
             </div>
           </div>
-          <div className="relative z-10 col-start-1 col-end-8 lg:row-start-1 lg:-row-end-1">
-            <div className="w-full rounded-md bg-gradient-to-r from-sky-500/10 to-indigo-500/40 p-4">
-              <Image src={surveyImage} alt="CRM image" />
-            </div>
-          </div>
-        </div>
-
-        <Separator className="my-16 lg:my-20" />
-
-        <div className="mb-36 grid items-center lg:grid-cols-12 lg:gap-4 lg:p-6">
-          <div className="col-start-1 col-end-7 row-start-1 -row-end-1 mb-4 flex flex-col space-y-6">
-            <h2 className="text-2xl font-bold">Portal de fidelidade</h2>
-            <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
-              <p className="font-light text-foreground">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                viverra urna eget sapien blandit, non sollicitudin augue congue.
-                Donec condimentum augue viverra, feugiat arcu quis, elementum
-                turpis. Vivamus varius, magna quis facilisis convallis, velit
-                est venenatis augue, ac hendrerit libero justo ornare dui.
-              </p>
-            </div>
-            <div className="flex justify-between gap-6 lg:justify-start">
-              <Image
-                className="size-8 lg:size-10"
-                src={reactIcon}
-                alt="React"
-              />
-              <Image
-                className="size-8 dark:invert lg:size-10"
-                src={nextJsIcon}
-                alt="NextJS"
-              />
-              <Image
-                className="size-8 lg:size-10"
-                src={tailwindCssIcon}
-                alt="TailwindCss"
-              />
-              <Image
-                className="size-8 dark:invert lg:size-10"
-                src={radixUiIcon}
-                alt="Radix UI"
-              />
-              <Image
-                className="size-8 lg:size-10"
-                src={typeScriptIcon}
-                alt="TypeScript"
-              />
-              <Image className="size-10" src={springIcon} alt="Spring boot" />
-            </div>
-          </div>
-          <div className="relative z-10 col-start-1 col-end-8 lg:col-start-6 lg:-col-end-1 lg:row-start-1 lg:-row-end-1">
-            <div className="w-full rounded-md bg-gradient-to-r from-indigo-500/10 to-sky-500/40">
-              <Image src={portalImage} alt="CRM image" />
-            </div>
-          </div>
-        </div>
+        </JobsWrraper>
       </section>
     </main>
   )

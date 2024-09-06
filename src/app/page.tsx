@@ -40,14 +40,14 @@ export default function Home() {
               <TitleWrraper>
                 <h2 className="text-xl font-bold lg:text-2xl">IZagro CRM</h2>
               </TitleWrraper>
-              <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 dark:bg-slate-900 lg:text-right lg:shadow-md">
-                <p className="text-sm font-light text-foreground lg:text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  viverra urna eget sapien blandit, non sollicitudin augue
-                  congue. Donec condimentum augue viverra, feugiat arcu quis,
-                  elementum turpis. Vivamus varius, magna quis facilisis
-                  convallis, velit est venenatis augue, ac hendrerit libero
-                  justo ornare dui.
+              <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 dark:bg-slate-900 lg:shadow-md">
+                <p className="text-sm font-light leading-relaxed text-foreground lg:text-base">
+                  Um plataforma de CRM para a gestão eficiente de clientes.
+                  Oferecendo ferramentas para acompanhamento e conversão de
+                  leads. Desenvolvido em <span>ANGULAR</span> assegurando uma
+                  experiência de navegação rápida e fluida, utilizando SAAS para
+                  a criação de estilos modulares e reutilizáveis e um design
+                  responsivo e consistente com BOOTSTRAP 5.
                 </p>
               </div>
               <div className="flex gap-4">
@@ -103,13 +103,15 @@ export default function Home() {
                 <h2 className="text-2xl font-bold">Marketplace IZagro</h2>
               </TitleWrraper>
               <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
-                <p className="font-light text-foreground">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  viverra urna eget sapien blandit, non sollicitudin augue
-                  congue. Donec condimentum augue viverra, feugiat arcu quis,
-                  elementum turpis. Vivamus varius, magna quis facilisis
-                  convallis, velit est venenatis augue, ac hendrerit libero
-                  justo ornare dui.
+                <p className="text-sm font-light leading-relaxed text-foreground lg:text-base">
+                  Desenvolvido utilizando Next.js, um framework poderoso para
+                  React que possibilita a criação de aplicações web altamente
+                  performáticas, com renderização híbrida (SSG e SSR),
+                  garantindo carregamento rápido e SEO otimizado. O design da
+                  interface é feito com Chakra UI, uma biblioteca de componentes
+                  estilizados e acessíveis, que oferece flexibilidade e
+                  facilidade na criação de interfaces de usuário modernas e
+                  responsivas.
                 </p>
               </div>
               <div className="flex justify-between gap-6 lg:justify-start">
@@ -157,13 +159,13 @@ export default function Home() {
                 <h2 className="text-2xl font-bold">IZagro Survey</h2>
               </TitleWrraper>
               <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
-                <p className="font-light text-foreground">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  viverra urna eget sapien blandit, non sollicitudin augue
-                  congue. Donec condimentum augue viverra, feugiat arcu quis,
-                  elementum turpis. Vivamus varius, magna quis facilisis
-                  convallis, velit est venenatis augue, ac hendrerit libero
-                  justo ornare dui.
+                <p className="text-sm font-light leading-relaxed text-foreground lg:text-base">
+                  Plataforma desenvolvida para proporcionar uma experiência de
+                  pesquisa dinâmica e acessível em qualquer dispositivo,
+                  utilizando o poder de Progressive Web Apps (PWA). Também
+                  desenvolvida com ANGULAR, API do GOOGLE MAPS e utilizando SAAS
+                  para a criação de estilos modulares e reutilizáveis e um
+                  design responsivo e consistente com BOOTSTRAP 5.
                 </p>
               </div>
               <div className="flex items-center justify-between gap-4">
@@ -213,13 +215,12 @@ export default function Home() {
                 <h2 className="text-2xl font-bold">Portal de fidelidade</h2>
               </TitleWrraper>
               <div className="relative z-20 w-full rounded-sm bg-slate-50 p-4 shadow-md dark:bg-slate-900">
-                <p className="font-light text-foreground">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  viverra urna eget sapien blandit, non sollicitudin augue
-                  congue. Donec condimentum augue viverra, feugiat arcu quis,
-                  elementum turpis. Vivamus varius, magna quis facilisis
-                  convallis, velit est venenatis augue, ac hendrerit libero
-                  justo ornare dui.
+                <p className="text-sm font-light leading-relaxed text-foreground lg:text-base">
+                  Desenvolvido para oferecer uma experiência personalizada e
+                  envolvente, permitindo que usuários acumulem pontos, resgatem
+                  recompensas e acompanhem seu progresso. Construído com NextJS
+                  na versão 14, com interface estilizada com Tailwind CSS. Com o
+                  Radix garantindo a acessibilidade e a usabilidade aprimorada.
                 </p>
               </div>
               <div className="flex justify-between gap-6 lg:justify-start">

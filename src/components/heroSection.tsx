@@ -66,7 +66,13 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: 0.5 }}
             >
-              <Image src="/avatar.png" width={163} height={168} alt="Avatar" />
+              <Image
+                src="/avatar.png"
+                width={163}
+                height={168}
+                alt="Avatar"
+                priority={true}
+              />
             </motion.div>
           </motion.div>
           <div className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2">

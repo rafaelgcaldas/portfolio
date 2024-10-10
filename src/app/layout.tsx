@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     title: 'Rafael Gomes',
     description:
       'Rafael Gomes é um desenvolvedor frontend que cria  interfaces modernas e interativas com foco na experiência do usuário.',
+    images: [
+      {
+        url: 'https://portfolio-rafaelgcaldas-projects.vercel.app/favicon.ico',
+      },
+    ],
   },
 }
 

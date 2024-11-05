@@ -96,7 +96,7 @@ export default function About() {
         <h2 className="mb-8 text-2xl font-semibold">Experiência</h2>
         <div className="relative mb-10 grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
           <header className="z-10 mb-2 mt-1 text-base font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
-            01/2018 - 08/2024
+            01/2019 - 08/2024
           </header>
           <div className="sm:col-span-6">
             <h3 className="mb-4 font-semibold leading-snug text-foreground">
@@ -169,8 +169,8 @@ export default function About() {
               Desenvolvedor Frontend (Júnior) - SMN (Franca - SP)
             </h3>
             <p className="mb-4 leading-normal text-muted-foreground">
-              Construindo e mantendo e estilizando interfaces para um sistema
-              ERP em colaboração com a equipe de backend e analistas de negócio.
+              Construindo, mantendo e estilizando interfaces para um sistema ERP
+              em colaboração com a equipe de backend e analistas de negócio.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">

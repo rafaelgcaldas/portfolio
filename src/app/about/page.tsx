@@ -94,6 +94,65 @@ export default function About() {
 
       <section className="mb-8 w-full rounded-lg border p-4">
         <h2 className="mb-8 text-2xl font-semibold">Experiência</h2>
+
+        <div className="relative mb-10 grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+          <header className="z-10 mb-2 mt-1 text-base font-semibold tracking-wide text-slate-500 sm:col-span-2">
+            11/2024 -{' '}
+            <span className="rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+              Atualmente
+            </span>
+          </header>
+          <div className="sm:col-span-6">
+            <h3 className="mb-4 font-semibold leading-snug text-foreground">
+              Desenvolvedor Frontend (Pleno) - Luizalabs (Franca - SP)
+            </h3>
+            <p className="mb-4 items-center leading-normal text-muted-foreground">
+              Construindo e mantendo painéis administrativos, dashboards e
+              components.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                React
+              </span>
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                TailwindCss
+              </span>
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                Semantic-ui
+              </span>
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                TypeScript
+              </span>
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                NextJS
+              </span>
+              <Separator
+                orientation="vertical"
+                className="hidden h-5 lg:block"
+              />
+              <span className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300">
+                Material-ui
+              </span>
+            </div>
+          </div>
+        </div>
+
         <div className="relative mb-10 grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
           <header className="z-10 mb-2 mt-1 text-base font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
             01/2019 - 08/2024
